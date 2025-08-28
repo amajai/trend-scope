@@ -56,6 +56,10 @@ pip install -r requirements.txt
 LLM_PROVIDER=google_genai
 LLM_MODEL=gemini-2.5-flash
 LLM_TEMPERATURE=0.1
+COMPRESS_LLM_PROVIDER=google_genai
+COMPRESS_LLM_MODEL=gemini-2.5-flash
+COMPRESS_LLM_TEMPERATURE=0.1
+COMPRESS_LLM_MAX_TOKENS=64000
 TAVILY_API_KEY=your_tavily_api_key_here
 GOOGLE_API_KEY=your_google_api_key_here
 ```
@@ -127,6 +131,10 @@ trend-scope/
 - `LLM_PROVIDER` - The language model provider (default: "google_genai")
 - `LLM_MODEL` - Specific model to use (default: "gemini-2.5-flash") 
 - `LLM_TEMPERATURE` - Model temperature for responses (default: 0.1)
+- `COMPRESS_LLM_PROVIDER` - Provider for report compression/generation (default: "google_genai")
+- `COMPRESS_LLM_MODEL` - Model for final report generation (default: "gemini-2.5-flash")
+- `COMPRESS_LLM_TEMPERATURE` - Temperature for report generation (default: 0.1)
+- `COMPRESS_LLM_MAX_TOKENS` - Maximum tokens for report generation (default: 64000)
 - `TAVILY_API_KEY` - API key for Tavily web search service
 - `GOOGLE_API_KEY` - Google API key for Gemini models
 
